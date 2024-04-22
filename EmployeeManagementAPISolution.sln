@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagementAPI", "EmployeeManagementAPI\EmployeeManagementAPI.csproj", "{99F74566-874C-4E46-BAAD-1DAEA142182D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagementAPI.UI", "EmployeeManagementAPI\EmployeeManagementAPI.UI.csproj", "{99F74566-874C-4E46-BAAD-1DAEA142182D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{985A564E-DF5D-4FD7-B977-81F0A6799B3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementAPI.Core", "Core\EmployeeManagementAPI.Core.csproj", "{985A564E-DF5D-4FD7-B977-81F0A6799B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementAPI.Infrastructure", "Infrastructure\EmployeeManagementAPI.Infrastructure.csproj", "{F0EC3D56-0068-4C28-9B7D-E3960F0A206B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BAD1CE6D-B96A-4D44-B7A4-486092F728ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,18 @@ Global
 		{985A564E-DF5D-4FD7-B977-81F0A6799B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{985A564E-DF5D-4FD7-B977-81F0A6799B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{985A564E-DF5D-4FD7-B977-81F0A6799B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0EC3D56-0068-4C28-9B7D-E3960F0A206B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0EC3D56-0068-4C28-9B7D-E3960F0A206B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0EC3D56-0068-4C28-9B7D-E3960F0A206B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0EC3D56-0068-4C28-9B7D-E3960F0A206B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99F74566-874C-4E46-BAAD-1DAEA142182D} = {BAD1CE6D-B96A-4D44-B7A4-486092F728ED}
+		{985A564E-DF5D-4FD7-B977-81F0A6799B3B} = {BAD1CE6D-B96A-4D44-B7A4-486092F728ED}
+		{F0EC3D56-0068-4C28-9B7D-E3960F0A206B} = {BAD1CE6D-B96A-4D44-B7A4-486092F728ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65B34C5D-9175-4889-B8F0-1A67D21F1C62}
